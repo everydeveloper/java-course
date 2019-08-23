@@ -2,6 +2,7 @@ Alright, next let's take in some user input using our scanner object (which we c
 
 The following code will ask the person what their name is, and create a personalized message for them to see the menu! The input entered in the terminal will be stored in the firstName variable.
 
+### Step 3
 Type the following code under Step 3.	  
 ```java
 System.out.print("What is your first name? ");
@@ -15,8 +16,6 @@ Let's test it out!
 Re-compile the java file `javac custom_order.java`, then run it `java custom_order`.
 
 Notice how we can add variables to text with the plus symbol? 
-
-## Showing a Text Menu
 
 ### Step 4: 
 

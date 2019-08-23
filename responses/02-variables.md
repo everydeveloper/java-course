@@ -1,4 +1,4 @@
-#Variables
+# Variables
 
 In this section, you will create a scanner object to take in user input, declare variables that will store information, and print out a friendly message!
 

@@ -73,7 +73,7 @@ steps:
 
   - title: User Input
     description: Learn how to gather user input, then display custom messages
-    event: issues_closed
+    event: issues.closed
     link: "{{ repoUrl }}/issues/2"
     actions:
       - type: respond
