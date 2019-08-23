@@ -1,0 +1,97 @@
+title: Introduction to Java
+tagline: Use Java to create a cake shop
+description: Java is an object oriented programming language, which is popular for multi-platform apps.
+tags:
+  - Java
+
+template:
+  name: java-course
+  repo: java-course-template
+  description: An introduction to Java
+before:
+  - type: createIssue
+    title: Introduction
+    body: 01-intro.md
+
+steps:
+  - title: Introduction
+    description: Introduction to Java, an Object Oriented programming language
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/1"
+    actions: 
+      - type: gate
+        left: '%payload.comment.body%'
+        operator: ==
+        right: b
+        else: 
+          - type: respond
+            with: 01-incorrect.md
+            issue: 1
+      - type: respond
+        with: 01-setup.md
+        issue: 1
+
+  - title: Set-up
+    description: Install and setup your developer environment
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/1"
+    actions: 
+      - type: respond
+        with: 01-setup.md
+        issue: 1
+
+  - title: Compile
+    description: Java files need to be compiled before read
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/1"
+    actions: 
+      - type: gate
+        left: '%payload.comment.body%'
+        operator: ==
+        right: true
+        else: 
+          - type: respond
+            with: 01-incorrect.md
+            issue: 1
+      - type: respond
+        with: 01-complete.md
+        issue: 1
+      - type: createIssue
+        title: Variables
+        body: 02-variables.md
+      - type: closeIssue
+        issue: 1
+
+  - title: Variables
+    description: Learn how to declare Java variables
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-user-input.md
+        issue: 2
+
+  - title: User Input
+    description: Learn how to gather user input, then display custom messages
+    event: issues_closed
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-complete.md
+        issue: 2
+      - type: createIssue
+        title: Putting it all together
+        body: 03-concat.md
+      - type: closeIssue
+        issue: 2
+
+  - title: Putting it all together
+    description: Display variables to finish shop
+    event: push
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-complete.md
+        issue: 3
+      - type: closeIssue
+        issue: 3
