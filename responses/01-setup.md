@@ -4,9 +4,9 @@
 
 Before we can start writing Java, we need to make sure you have your environment set up. You just need a few things (some of which you might already have!)
 
-- [] Check if Java is installed and set path
-- [] Download a text editor
-- [] Clone your course repository using git
+- [ ] Check if Java is installed and set path
+- [ ] Download a text editor
+- [ ] Clone your course repository using git
 
 ## Check that Java is installed
 

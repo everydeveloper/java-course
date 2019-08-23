@@ -7,4 +7,3 @@ Open the custom_order.java file in your text editor to view the code before it i
 *Before you continue, is the following statement is true or false?*
 
 _You need to re-compile your code each time you want to test edits to your java file._
- 

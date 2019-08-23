@@ -37,7 +37,7 @@ steps:
     link: "{{ repoUrl }}/issues/1"
     actions: 
       - type: respond
-        with: 01-setup.md
+        with: 01-compile.md
         issue: 1
 
   - title: Compile
