@@ -5,8 +5,8 @@ You created your first Java program!☕😀 This is the end of this intro course
 Next Steps:
 * Declair a "totalCost" variable, and a "addOnList" variable
 ```java
-int totalCost
-String addOnList
+int totalCost;
+String addOnList;
 ```
 * Write a custom method that takes a string and integer as arguments, then adds them to our cost and addOnList variables
 ```java
