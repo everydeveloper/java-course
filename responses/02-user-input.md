@@ -8,7 +8,7 @@ Type the following code under Step 3.
 System.out.print("What is your first name? ");
 firstName = keyboard.nextLine();
 
-System.out.print(firstName + " , please see our MENU below: ");
+System.out.print(firstName + ", please see our MENU below: ");
 System.out.print("\n"); // skips a line	  
 ```
 Let's test it out!
