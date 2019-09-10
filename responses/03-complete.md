@@ -10,7 +10,7 @@ String addOnList
 ```
 * Write a custom method that takes a string and integer as arguments, then adds them to our cost and addOnList variables
 ```java
-static void addOn(String item, int cost) {
+static void addItem(String item, int cost) {
   totalCost+=cost;
   addOnList+=item;
 }
