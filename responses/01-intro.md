@@ -2,7 +2,7 @@
 
 Java is a popular programming language for several main reasons:
 
-* It workes on many different platforms.
+* It works on many different platforms.
 * It's easy to learn and open source. 
 * It's fast and powerful.
 
